@@ -1,0 +1,29 @@
+.stellar-block {
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 8;
+}
+.first {
+  background-image: url(../images/page-1_bg-1.jpg);
+  background-color: #fff;
+  background-size: cover !important;
+  background-position: top center;
+}
+.second {
+  background-image: url(../images/page-1_bg-2.jpg);
+  background-color: #fafafa;
+  background-size: cover !important;
+  background-position: top center;
+}
+@media only screen and (max-width: 979px) {
+  .stellar-block {
+    background-attachment: scroll;
+    background-position: 50% 50% !important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-bottom: 100px;
+    z-index: 8;
+  }
+}

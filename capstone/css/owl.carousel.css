@@ -1,0 +1,121 @@
+
+
+#owl {
+	z-index: 1;
+	position: relative;
+	padding: 18px 39px 88px 5px;
+}
+.owl-item {
+	float: left;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#owl .owl-wrapper-outer {
+	overflow: hidden;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+
+#owl .owl-prev, #owl .owl-next {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	height: 34px;
+	left: 262px;
+	width: 34px;
+	top: 172px;
+	background: #fff;
+}
+#owl .owl-prev:before{
+	position: absolute;
+	font-family: 'FontAwesome';
+	content: 'ï„„';
+	color: #686767;
+	font-size: 24px;	
+	width: 34px;
+	height: 34px;
+	padding-top: 7px;
+	padding-left: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+#owl .owl-next {
+	right: 38px;
+	left: auto;
+	background-position: right bottom;
+}
+#owl .owl-next:before{
+	position: absolute;
+	font-family: 'FontAwesome';
+	content: 'ï„…';
+	color: #686767;
+	font-size: 24px;	
+	width: 34px;
+	height: 34px;
+	padding-top: 7px;
+	padding-left: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+#owl .owl-next:hover:before, #owl .owl-prev:hover:before  {
+	color: #fff;
+	background: #e7766b;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+@media only screen and (max-width: 1199px){
+	#owl .owl-prev, #owl .owl-next {
+		left: 192px;
+		top: 195px;
+	}
+	#owl .owl-next {
+		right: 38px;
+		left: auto;
+	}
+}
+@media only screen and (max-width: 979px){
+	#owl .owl-prev, #owl .owl-next {
+		left: 128px;
+		top: 247px;
+	}
+	#owl .owl-next {
+		right: 38px;
+		left: auto;
+	}
+}
+@media only screen and (max-width: 767px){
+	#owl .owl-prev, #owl .owl-next {
+		left: 312px;
+		top: 170px;
+	}
+	#owl .owl-next {
+		right: 38px;
+		left: auto;
+	}
+}
+@media only screen and (max-width: 479px){
+	#owl .owl-prev, #owl .owl-next {
+		left: 162px;
+		top: 210px;
+	}
+	#owl .owl-next {
+		right: 38px;
+		left: auto;
+	}
+}

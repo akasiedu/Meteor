@@ -1,0 +1,26 @@
+<template name="home">
+	
+	
+		<div class="container">
+			<div class="row animated bounceInUp">
+				{{#each jewel}}
+					<div class="col-md-3 col-md-offset-1">
+						<div class="view view-fifth">
+					        {{#with FS.GetFile 'images' picture}}
+			                    <img src="{{this.url}}" class="img-responsive" />
+			                {{/with}}
+			                    <div class="mask"></div>
+			                    <div class="content">
+			                        
+			                        <p>{{decription}}</p>
+			                        <a href="#" class="info">{{title}}</a>
+			                    </div>
+			                </div>
+			        </div>
+			    {{/each}}          
+			</div>
+		</div>
+	
+
+</template>
+
